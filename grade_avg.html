@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Average Grade Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="escape_home.html">Passion Project Website</a>
+  <a href="intro.html">About Dani</a>
+</div>
+
+  <h1>Average Grade Calculator</h1>
+  <p>Entering grades and calculating avg 👩🏽‍🏫</p>
+<script> 
+
+let counter = 0;
+let grades = prompt("Enter a grade or type '-1' to end: ");
+grades = parseInt(grades);
+let gradeTotal = 0;
+
+while (grades != -1)
+{
+	gradeTotal += grades;
+	counter++;
+	grades = prompt("Enter a grade or type '-1' to end: ");
+	grades = parseInt(grades);
+}
+console.log("Number of grades entered: " + counter);
+console.log("Total of all grades: " + gradeTotal);
+console.log("avg grade is: " + (gradeTotal/counter));
+
+document.write("Number of grades entered: " + counter + "<br>");
+document.write("Total of all grades: " + gradeTotal + "<br>");
+document.write("Avg grade is: " + (gradeTotal/counter) + "<br>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* styles.css */
+
+/* All Pages */
+body	{background-color: #f0fff4;}
+h1		{color: #633636;} 
+h2		{color: #633636;}
+h3		{color: #262626;}
+li		{color: #262626;}
+ul		{color: #262626; font-size:110%}
+p		{color: #262626; font-size:110%}
+a		{text-decoration: underline; color: #0b5ed7;}
+
+/* Index Page */
+#introtag {
+	color: #262626;
+	font-size:120%
+}
+
+.solid_line {
+    width: 100%;
+    height: 5px;
+    border-top: 5px solid #14614d;
+    line-height: 80%;
+}
+
+#pfl {
+	height:400px;
+	width:300px;
+	float:right;
+	padding-top:40px;
+}
+	
+/* Intro Page */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #E6E6FA;
+}
+
+/* All Pages */
+.topnav {
+  background-color: #262626;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  border-right: 3px solid #14614d;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #14614d;
+  color: white;
+}
+
+#header1 {
+	font-size:250%
+}
+
+.heading {
+	text-align:center
+}
+
+/* Passion Project */
+#escape_container {
+    max-width: 600px;
+    margin: 0 auto;     
+    text-align: center; 
+    padding: 20px;
+}
+
+#room1_banner {
+    width: 100%;
+    height: 250px;
+    background-image: url("images/lostwoods.jpg");
+    background-size: cover;
+    background-position: center;
+	margin-bottom: 20px;
+}
+
+#room1_container {
+    max-width: 1000px;
+    margin: 0 auto;     
+    text-align: center; 
+    padding: 20px;
+}
+
+#room2_banner {
+    width: 100%;
+    height: 250px;
+    background-image: url("images/lotr.jpg"); 
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+#room2_container {
+    max-width: 1000px;
+    margin: 0 auto;     
+    text-align: center; 
+    padding: 20px;
+}
+
+.weapon {
+	width: 120px;
+	height: auto;
+	margin: 10px;
+}
+
+#room3_banner {
+    width: 100%;
+    height: 280px;
+    background-image: url("images/sports.png"); 
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+#room3_container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#team_column, #logo_column, #logo2_column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.team_box {
+    padding: 12px 15px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-weight: bold;
+}
+
+.team_box.selected {
+    background-color: #d0e6ff;
+    border-color: #0066cc;
+}
+
+.logo_img {
+    width: 120px; 
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.logo_img.correct {
+    opacity: 0.5;
+    border-color: green;
+}
+
+.team_box.correct {
+    opacity: 0.5;
+    border-color: green;
+}
+
+#escape_end_container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}

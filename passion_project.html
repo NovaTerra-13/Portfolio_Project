@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Dani Luongo's Projects</title>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="passion_project.html">Passion Project Website</a>
+  <a href="intro.html">About Dani</a>
+</div>
+
+<br>
+
+<div class="heading">
+<h1 id="header1">Passion Project</h1>
+<p>I enjoy cryptopgraphy</p>
+<div>
+<div class="solid_line"></div>
+
+<section id="password_generator">
+    <h2>Custom Password Generator</h2>
+	
+	    <label>
+        <input type="checkbox" id="Dictionary">Include dictionary word</label>
+		<br><br>
+	
+	<label for="theme_select">Choose a theme for dictionary word:</label>
+	<select id="theme_select">
+		<option value="none">--No Theme--</option>
+		<option value="zelda">Zelda</option>
+		<option value="nature">Nature</option>
+		<option value="lord_of_the_rings">Lord of the Rings</option>
+		<option value="sports">Sports</option>
+	</select>
+	<br><br>
+
+    <label>
+        <input type="checkbox" id="Uppercase">Include capital letters</label>
+		<br>
+
+    <label>
+        <input type="checkbox" id="Numbers">Include numbers</label>
+		<br>
+
+    <label>
+        <input type="checkbox" id="Symbols">Include symbols</label>
+		<br><br>
+
+    <label>Password length:
+        <input type="number" id="pass_length" value="12" min="4" max="20"></label>
+	
+	<br><br>
+
+    <button id="generate_button">Generate Password</button>
+
+    <p id="output"></p>
+</section>
+
+<script src="passion_project.js"></script>
+
+</body>
+</html>
+
+<!--References:
+https://www.w3schools.com/tags/tag_section.asp
+https://www.w3schools.com/howto/howto_js_cascading_dropdown.asp
+https://www.w3schools.com/tags/att_input_type_checkbox.asp
+https://www.w3schools.com/JS/js_const.asp
+https://stackoverflow.com/questions/13237421/how-to-generate-random-words-in-javascript
+https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+-->

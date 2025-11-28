@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Escape Room Entrance</title>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="escape_home.html">Passion Project</a>
+  <a href="intro.html">About Dani</a>
+</div>
+
+<br>
+
+<div class="heading">
+<h1 id="header1">Escape Room Entrance</h1>
+<p>I enjoy puzzles and games, so I am naturally drawn to cryptography. I want to take you on a short journey through some of my passions in the form of an escape game puzzle.</p>
+</div>
+<div class="solid_line"></div>
+
+<div id="escape_container">
+	<p><strong>---Decode the message below to find the password---</strong></p>
+
+	<p><strong>Cipher Text:</strong> ewwlmvaewzl</p>
+	<br>
+	<img src="images/zelda_fire.gif" style="width: 50px;">
+    <p><strong>Hint #1:</strong> "It's dangerous to go alone. Take this." _____</p>
+	<br>
+
+<button id="show_hints">Show More Hints</button> 
+<br>
+    <div id="hints" style="display: none;">
+        <p><strong>Hint #2:</strong>Use a Caesar shift of 86 (as in 1986).</p>
+        <p><strong>Hint #3:</strong>"It's dangerous to go alone! Take this." is a famous line from the 1986 video game The Legend of Zelda. It is spoken by an old man in a cave who gives the protagonist, Link, a <em><strong>wooden sword.</strong></em></p>
+    </div>
+	<br>
+<div class="solid_line"></div>
+	<p>Enter the password to begin:</p>
+	<input type="password" id="start_password" placeholder="Enter password">
+	<button id="enter_button">Enter</button>
+	<p id="error_message"></p>
+	<div class="solid_line"></div>
+</div>
+
+<script src="escape.js"></script>
+
+</body>
+</html>
+
+<!--References:
+https://www.w3schools.com/howto/howto_js_cascading_dropdown.asp
+https://www.w3schools.com/JS/js_const.asp
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+https://sqlpey.com/javascript/javascript-play-audio/
+https://openjavascript.info/2023/12/15/how-to-play-audio-in-javascript/
+https://www.webdevtutor.net/blog/javascript-button-click-sound
+-->

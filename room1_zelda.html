@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Zelda Room</title>
+    <link rel="stylesheet" href="styles.css">
+	</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="escape_home.html">Passion Project</a>
+  <a href="intro.html">About Dani</a>
+</div>
+
+<br>
+
+<div class="heading">
+<h1 id="header1">Zelda Room</h1>
+<p>Welcome! You find yourself immersed in my favorite video game series.</p>
+<p>You're in a quiet forest clearing, with a soft melody echoing through the trees. In the distance, there is something glowing.</p>
+<p>As you get closer, you recognize it as the Master Sword. Where does the Master Sword sleep?</p>
+<div class="solid_line"></div>
+<p>---Answer the question to reveal the key that will guide you to the next room.---</p>
+<p>(enter as one word)</p>
+</div>
+
+<div id="escape_container">
+<button id="show_hints">Show Hints</button> 
+<br>
+    <div id="hints" style="display: none;">
+        <p><strong>Hint #1:</strong> The forest is a maze…one that many travelers get lost in.</p>
+		<p><a href="https://zelda.fandom.com/wiki/Skull_Kid" title="Click here" target="_blank" rel="noopener noreferrer"><strong>Hint #2:</strong> It is the home of mysterious music and mischievous Skull Kids.</a></p>
+        <p><strong>Hint #3:</strong> It starts with "lost".</p>
+    </div>
+</div>
+
+<div id="room1_banner"></div>
+
+<div id="room1_container">
+    <audio id="zelda_sound" src="sounds/secret.mp3"></audio>
+    <p>Enter the Zelda key to continue:</p>
+    <input type="text" id="zelda_key" placeholder="Enter key">
+    <button id="zelda_button">Unlock</button>
+    <p id="zelda_error"></p>
+</div>
+
+<script src="escape.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Treasure Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="escape_home.html">Passion Project</a>
+  <a href="intro.html">About Dani</a>
+</div>
+
+  <h1>Treasure Game</h1>
+  <p>🏴‍☠ You need at least 200 points to escape the cave! 🏴‍☠</p>
+  
+<script> 
+
+alert("🏴‍☠️ Welcome to treasure hunting! You need at least 200 points to escape the cave! 🏴‍☠️");
+	let totalPoints = 0;
+    let treasure = 0;
+	
+while (totalPoints < 200) {
+	treasure = parseInt(prompt("Enter treasure points found:"));
+	
+	if (isNaN(treasure) || treasure < 0) {
+    alert("🛑 Numbers only.");
+    continue; 
+	}
+
+	totalPoints += treasure; 
+	console.log("You found " + treasure + " points! Total so far: " + totalPoints);
+
+	document.write("You found " + treasure + " points! Total so far: " + totalPoints + "<br>");
+}
+	
+alert("🎉🪙 You escaped the cave with " + totalPoints + " treasure points! 🪙🎉");
+document.write("<strong><br>🎉🪙 You escaped the cave with " + totalPoints + " treasure points! 🪙🎉</strong>");
+	
+</script>
+</body>
+</html>
